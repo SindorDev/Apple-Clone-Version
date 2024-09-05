@@ -1,11 +1,481 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-     <meta charset="UTF-8">
-     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <title>Document</title>
-</head>
-<body>
-     
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style/style.css" />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp,container-queries"></script>
+  </head>
+  <body>
+    <section class="bg-black flex items-center justify-center py-2">
+      <div class="flex container justify-between items-center w-full">
+        <span class="text-[18px] font-normal text-[#FAFAFA]"
+          >Summer Sale For All Swim Suits And Free Express Delivery - OFF 50%!
+          <span>ShopNow</span></span
+        >
+        <select
+          class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500"
+        >
+          <option value="english">Eng</option>
+          <option value="russian">Ru</option>
+        </select>
+      </div>
+    </section>
+    <header>
+      <nav class="container">
+        <div class="flex items-center justify-between pt-[40px]">
+          <h1
+            class="text-[24px] font-bold leading-[24px] text-black capitalize"
+          >
+            Exclusive
+          </h1>
+          <ul class="flex items-center gap-[48px]">
+            <li>
+              <a
+                href="#"
+                class="text-[16px] leading-[24px] font-semibold hover:border-b-2 hover:border-black border-b-2 border-transparent text-black"
+                >Home</a
+              >
+            </li>
+
+            <li>
+              <a
+                href="#"
+                class="text-[16px] leading-[24px] font-semibold hover:border-b-2 hover:border-black border-b-2 border-transparent text-black"
+                >Contact</a
+              >
+            </li>
+
+            <li>
+              <a
+                href="#"
+                class="text-[16px] leading-[24px] font-semibold hover:border-b-2 hover:border-black border-b-2 border-transparent text-black"
+                >About</a
+              >
+            </li>
+
+            <li>
+              <a
+                href="#"
+                class="text-[16px] leading-[24px] font-semibold hover:border-b-2 hover:border-black border-b-2 border-transparent text-black"
+                >Sign Up</a
+              >
+            </li>
+          </ul>
+          <div class="flex items-center gap-6">
+            <div
+              class="flex items-center gap-[38px] w-full max-w-[443px] h-full min-h-[38px] px-5 bg-[#F5F5F5]"
+            >
+              <input
+                type="text"
+                id="search"
+                placeholder="What are you looking for?"
+                class="bg-transparent outline-none border-none"
+              />
+              <label for="search">
+                <img src="./images/search.svg" alt="search product" />
+              </label>
+            </div>
+            <img src="./images/likes.svg" alt="like and cart" />
+          </div>
+        </div>
+      </nav>
+    </header>
+    <section class="container">
+      <div
+        class="w-full h-full flex items-center my-[40px] rounded-lg px-5 justify-center gap-[120px] bg-black"
+      >
+        <div class="w-full flex flex-col gap-5 max-w-[300px]">
+          <div class="flex items-center gap-6">
+            <img src="./images/apple.png" alt="apple logo" />
+            <span class="text-[16px] text-[#FAFAFA] leading-[24px] font-normal"
+              >iPhone 14 Series</span
+            >
+          </div>
+          <h1 class="text-[48px] leading-[60px] font-bold text-white">
+            Up to 10% off Voucher
+          </h1>
+          <span
+            class="text-[16px] leading-[24px]font-normal text-[#FAFAFA] flex items-center gap-3"
+          >
+            <a href="#" class="border-b-[1px] border-white">Shop Now</a>
+            <img src="./images/arrow.png" alt="arrow shop " />
+          </span>
+        </div>
+        <img
+          src="./images/banner.png"
+          class="w-full max-w-[800px] h-full"
+          alt="banner"
+        />
+      </div>
+    </section>
+    <section class="container">
+      <div>
+        <div class="flex items-center gap-5">
+          <div
+            class="w-full rounded-sm h-full max-w-[20px] min-h-[40px] bg-red-500"
+          ></div>
+          <span class="text-[16px] leading-[24px] font-bold text-[#DB4444]"
+            >This Month</span
+          >
+        </div>
+        <div class="flex items-center justify-between mt-5">
+          <h3 class="text-[36px] font-bold leading-[48px] text-black">
+            Browse By Category
+          </h3>
+        </div>
+        <div class="flex flex-col my-[40px] items-center">
+          <div class="flex justify-center w-full items-center gap-[60px]">
+            <div
+              class="flex flex-col items-center justify-center w-full h-full min-h-[145px] hover:bg-[#DB4444] hover:text-white rounded-md shadow-2xl"
+            >
+              <img
+                src="./assets/category-cell-phone.svg"
+                alt="Phones"
+                class="w-14 h-14"
+              />
+              <span class="text-lg leading-6 mt-3">Phones</span>
+            </div>
+            <div
+              class="flex flex-col items-center justify-center w-full h-full min-h-[145px] hover:bg-[#DB4444] hover:text-white rounded-md shadow-2xl"
+            >
+              <img
+                src="./assets/category-computer.svg"
+                alt="Computers"
+                class="w-14 h-14"
+              />
+              <span class="text-lg leading-6 mt-3">Computers</span>
+            </div>
+            <div
+              class="flex flex-col items-center justify-center w-full h-full min-h-[145px] hover:bg-[#DB4444] hover:text-white rounded-md shadow-2xl"
+            >
+              <img
+                src="./assets/Category-SmartWatch.svg"
+                alt="SmartWatch"
+                class="w-14 h-14"
+              />
+              <span class="text-lg leading-6 mt-3">SmartWatch</span>
+            </div>
+            <div
+              class="flex flex-col items-center justify-center w-full h-full min-h-[145px] hover:bg-[#DB4444] hover:text-white rounded-md shadow-2xl"
+            >
+              <img
+                src="./assets/category-camera.svg"
+                alt="Camera"
+                class="w-14 h-14"
+              />
+              <span class="text-lg leading-6 mt-3">Camera</span>
+            </div>
+            <div
+              class="flex flex-col items-center justify-center w-full h-full min-h-[145px] hover:bg-[#DB4444] hover:text-white rounded-md shadow-2xl"
+            >
+              <img
+                src="./assets/category-headphone.svg"
+                alt="HeadPhones"
+                class="w-14 h-14"
+              />
+              <span class="text-lg leading-6 mt-3">HeadPhones</span>
+            </div>
+            <div
+              class="flex flex-col items-center justify-center w-full h-full min-h-[145px] hover:bg-[#DB4444] hover:text-white rounded-md shadow-2xl"
+            >
+              <img
+                src="./assets/category-gamepad.svg"
+                alt="Gaming"
+                class="w-14 h-14"
+              />
+              <span class="text-lg leading-6 mt-3">Gaming</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="container">
+      <div class="my-[80px]">
+        <div class="flex items-center gap-5">
+          <div
+            class="w-full rounded-sm h-full max-w-[20px] min-h-[40px] bg-red-500"
+          ></div>
+          <span class="text-[16px] leading-[24px] font-bold text-[#DB4444]"
+            >This Month</span
+          >
+        </div>
+        <div class="flex items-center justify-between mt-5">
+          <h3 class="text-[36px] font-bold leading-[48px] text-black">
+            Best Selling Products
+          </h3>
+          <button
+            class="px-[48px] py-[16px] rounded-[10px] bg-red-500 text-[16px] leading-[24px] text-[#FAFAFA]"
+          >
+            View All
+          </button>
+        </div>
+        <div class="grid grid-cols-4 my-[40px] gap-8" id="cards"></div>
+      </div>
+    </section>
+    <section class="container">
+      <div class="my-[80px]">
+        <div class="flex gap-5 items-center">
+          <img src="./assets/rectangle-18.svg" alt="Icon" class="w-5 h-10" />
+          <h1 class="text-lg font-semibold text-red-600">Featured</h1>
+        </div>
+        <div class="text-4xl font-semibold tracking-widest text-black">
+          New Arrival
+        </div>
+        <div class="flex gap-8 my-[40px] w-full h-[600px] justify-between">
+          <div class="flex h-full w-full gap-8">
+            <div
+              class="bg-black h-full text-white w-full rounded overflow-hidden flex flex-col relative"
+            >
+              <img
+                src="./assets/ps-5-slim-goedkope-playstation-large-1.svg"
+                alt="PlayStation 5"
+                class="w-full"
+              />
+              <div class="p-5 absolute bottom-5 left-5 flex flex-col gap-4">
+                <h2 class="font-inter font-semibold text-2xl tracking-wide">
+                  PlayStation 5
+                </h2>
+                <p class="font-poppins font-normal text-sm">
+                  Black and White version of the PS5 coming out on sale.
+                </p>
+                <div class="flex items-center gap-2">
+                  <span
+                    class="text-white font-poppins font-medium text-base leading-6"
+                    >Shop Now</span
+                  >
+                  <img
+                    src="./assets/under-line.svg"
+                    alt="Underline"
+                    class="mt-2 w-20"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="flex flex-col gap-8">
+            <div
+              class="bg-black text-white w-full rounded overflow-hidden flex flex-col relative flex-grow bg-gray-900"
+            >
+              <img
+                src="./assets/attractive-woman-wearing-hat-posing-black-background-1.svg"
+                alt="Women's Collection"
+                class="w-full"
+              />
+              <div class="p-5 absolute bottom-5 left-5 flex flex-col gap-4">
+                <h2 class="font-inter font-semibold text-2xl tracking-wide">
+                  Women’s Collections
+                </h2>
+                <p class="font-poppins font-normal text-sm">
+                  Featured woman collections that give you another vibe.
+                </p>
+                <div class="flex items-center gap-2">
+                  <span
+                    class="text-white font-poppins font-medium text-base leading-6"
+                    >Shop Now</span
+                  >
+                  <img
+                    src="./assets/under-line-2.svg"
+                    alt="Underline"
+                    class="mt-2 w-20"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="flex gap-8">
+              <div
+                class="bg-black text-white rounded overflow-hidden flex flex-col relative w-64"
+              >
+                <img
+                  src="./assets/frame-707.svg"
+                  alt="Speakers"
+                  class="w-full"
+                />
+                <div class="p-5 absolute bottom-5 left-5 flex flex-col gap-4">
+                  <h2 class="text-2xl tracking-wide">Speakers</h2>
+                  <div class="flex items-center gap-2">
+                    <span
+                      class="text-white font-poppins font-medium text-base leading-6"
+                      >Shop Now</span
+                    >
+                    <img
+                      src="./assets/under-line-3.svg"
+                      alt="Underline"
+                      class="mt-2 w-20"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div
+                class="bg-black text-white rounded overflow-hidden flex flex-col relative w-64"
+              >
+                <img
+                  src="./assets/frame-706.svg"
+                  alt="Perfume"
+                  class="w-full"
+                />
+                <div class="p-5 absolute bottom-5 left-5 flex flex-col gap-4">
+                  <h2 class="font-inter font-semibold text-2xl tracking-wide">
+                    Perfume
+                  </h2>
+                  <div class="flex items-center gap-2">
+                    <span
+                      class="text-white font-poppins font-medium text-base leading-6"
+                      >Shop Now</span
+                    >
+                    <img
+                      src="./assets/under-line-4.svg"
+                      alt="Underline"
+                      class="mt-2 w-20"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="container">
+     <div class="my-[80px]">
+       <div class="flex items-center gap-5">
+         <div
+           class="w-full rounded-sm h-full max-w-[20px] min-h-[40px] bg-red-500"
+         ></div>
+         <span class="text-[16px] leading-[24px] font-bold text-[#DB4444]"
+           >This Month</span
+         >
+       </div>
+       <div class="flex items-center justify-between mt-5">
+         <h3 class="text-[36px] font-bold leading-[48px] text-black">
+           Best Selling Products
+         </h3>
+         <button
+           class="px-[48px] py-[16px] rounded-[10px] bg-red-500 text-[16px] leading-[24px] text-[#FAFAFA]"
+         >
+           View All
+         </button>
+       </div>
+       <div class="grid grid-cols-4 my-[40px] gap-8" id="cards"></div>
+     </div>
+   </section>
+    <footer class="bg-black">
+      <div
+        class="flex container justify-between flex-wrap gap-8 p-[60px] text-white"
+      >
+        <div class="flex flex-col gap-6 max-w-[300px]">
+          <h4 class="text-xl font-medium">Exclusive</h4>
+          <p class="text-base font-normal leading-6 text-white/60">Subscribe</p>
+          <p class="text-base font-normal leading-6 text-white/60">
+            Get 10% off your first order
+          </p>
+          <div class="flex w-full h-[38px] py-2 border items-center">
+            <input
+              type="email"
+              placeholder="Enter your email"
+              class="w-full border border-none rounded bg-transparent text-white placeholder-white/60"
+            />
+            <button class="bg-transparent text-white cursor-pointer">
+              <img src="./assets/icon-send.svg" alt="send" />
+            </button>
+          </div>
+        </div>
+        <div class="flex flex-col gap-6 max-w-[200px]">
+          <h4 class="text-xl font-medium">Support</h4>
+          <p class="text-base font-normal leading-6 text-white/60">
+            111 Bijoy sarani, Dhaka, DH 1515, Bangladesh.
+          </p>
+          <p class="text-base font-normal leading-6 text-white/60">
+            exclusive@gmail.com
+          </p>
+          <p class="text-base font-normal leading-6 text-white/60">
+            +88015-88888-9999
+          </p>
+        </div>
+        <div class="flex flex-col gap-6 max-w-[200px]">
+          <h4 class="text-xl font-medium">Account</h4>
+          <a href="#" class="text-base font-normal leading-6 text-white/60"
+            >My Account</a
+          >
+          <a href="#" class="text-base font-normal leading-6 text-white/60"
+            >Login / Register</a
+          >
+          <a href="#" class="text-base font-normal leading-6 text-white/60"
+            >Cart</a
+          >
+          <a href="#" class="text-base font-normal leading-6 text-white/60"
+            >Wishlist</a
+          >
+          <a href="#" class="text-base font-normal leading-6 text-white/60"
+            >Shop</a
+          >
+        </div>
+        <div class="flex flex-col gap-6 max-w-[200px]">
+          <h4 class="text-xl font-medium">Quick Link</h4>
+          <a href="#" class="text-base font-normal leading-6 text-white/60"
+            >Privacy Policy</a
+          >
+          <a href="#" class="text-base font-normal leading-6 text-white/60"
+            >Terms Of Use</a
+          >
+          <a href="#" class="text-base font-normal leading-6 text-white/60"
+            >FAQ</a
+          >
+          <a href="#" class="text-base font-normal leading-6 text-white/60"
+            >Contact</a
+          >
+        </div>
+        <div class="flex flex-col gap-6 max-w-[200px]">
+          <h4 class="text-xl font-medium">Download App</h4>
+          <p class="text-base font-normal leading-6 text-white/60">
+            Save $3 with App New User Only
+          </p>
+          <div class="flex items-center gap-4">
+            <img
+              src="./assets/qr-code.svg"
+              alt="QR Code"
+              class="w-[80px] h-[80px] invert"
+            />
+            <div class="flex flex-col gap-1">
+              <img
+                src="./assets/google-play.svg"
+                alt="Google Play"
+                class="invert"
+              />
+              <img
+                src="./assets/app-store.svg"
+                alt="App Store"
+                class="invert"
+              />
+            </div>
+          </div>
+          <div class="flex gap-6">
+            <img
+              src="./assets/icon-facebook.svg"
+              alt="Facebook"
+              class="invert"
+            />
+            <img src="./assets/icon-twitter.svg" alt="Twitter" class="invert" />
+            <img
+              src="./assets/icon-instagram.svg"
+              alt="Instagram"
+              class="invert"
+            />
+            <img
+              src="./assets/icon-linkedin.svg"
+              alt="LinkedIn"
+              class="invert"
+            />
+          </div>
+        </div>
+        <div class="w-full h-[1px] bg-white/60"></div>
+        <p class="text-center text-white/60 w-full text-base">
+          &copy; Copyright Rimel 2022. All rights reserved.
+        </p>
+      </div>
+    </footer>
+
+    <script src="./dist/app.js"></script>
+  </body>
 </html>
